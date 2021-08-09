@@ -1,0 +1,72 @@
+/**********SIGN-UP**********/
+.sign-up {
+	overflow: hidden;
+	height: 100vh;
+
+	@media only screen and (max-width: $bp-largest) {
+		height: 60vh;
+	}
+	@media only screen and (max-width: $bp-large) {
+		height: 100%;
+	}
+
+	&__title {
+		text-align: center;
+		margin-top: 3.5rem;
+		color: var(--tertiary-color);
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 5rem;
+
+		@media only screen and (max-width: $bp-large) {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+
+	&__card {
+		background-image: var(--background-gradient);
+		display: inline-block;
+		width: 17rem;
+		height: 18rem;
+		text-align: center;
+		border-radius: 5px;
+		color: var(--secondary-color);
+		box-shadow: 0.3rem 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+
+		@media only screen and (max-width: $bp-large) {
+			margin-bottom: 2rem;
+		}
+
+		ul {
+			list-style: none;
+			font-size: 1.2rem;
+			margin-bottom: 1.5rem;
+			li {
+				margin: 1rem 0;
+			}
+		}
+
+		a {
+			font-size: 1rem !important;
+			padding: 0.6rem !important;
+		}
+	}
+
+	.card-title {
+		text-align: left;
+		margin-top: 1rem;
+		margin-left: 0.5rem;
+		font-weight: 400;
+	}
+
+	.card-price {
+		font-size: 1.5rem;
+		margin: 1rem 0;
+		font-weight: 700;
+	}
+}

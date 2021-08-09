@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Anime Food</title>
+	</head>
+	<body>
+		<div class="main">
+			<nav class="navigation">
+				<a href="#Home">
+					<div class="navigation__title">
+						<span
+							class="iconify logo-icon"
+							data-icon="emojione:shallow-pan-of-food"
+							data-inline="false"
+						></span>
+						<p class="title">Anime Food</p>
+					</div>
+				</a>
+				<ul class="navigation__menu">
+					<li><a href="#Feature">Features</a></li>
+					<li><a href="#Overview">Overview</a></li>
+					<li><a href="#Sign-up">Sign Up</a></li>
+					<li><a href="#Share-review">Share Review</a></li>
+				</ul>
+			</nav>
+
+			<header class="hero" id="Home">
+				<div class="hero__container">
+					<h1 class="hero-text">
+						A Place For Anime Fans Who <br />
+						love They’re Delicacies
+					</h1>
+					<div class="buttons">
+						<a class="btn btn--orange" href="#Sign-up">Okay I'm In</a>
+						<a class="btn btn--orange" href="#Overview">Show Video</a>
+					</div>
+				</div>
+			</header>
+
+			<section class="feature" id="Feature">
+				<h1 class="feature__title">Eat Your Favorite Anime Style Foods</h1>
+				<div class="feature__container">
+					<div class="feature__card">
+						<div class="feature-icon">
+							<span
+								class="iconify feature__ico"
+								data-icon="ic:baseline-moped"
+								data-inline="false"
+							></span>
+						</div>
+						<div class="feature__text">
+							<h2 class="title-text">Get it Delivered within 30 minutes</h2>
+							<p class="summary-text">
+								We make sure you receive your food as soon as we have finished
+								cooking it. We also provide free returns if you are not
+								satisfied.
+							</p>
+						</div>
+					</div>
+					<div class="feature__card">
+						<div class="feature-icon">
+							<span
+								class="iconify feature__ico"
+								data-icon="mdi:food-apple"
+								data-inline="false"
+							></span>
+						</div>
+						<div class="feature__text">
+							<h2 class="title-text">100% Organic and fresh</h2>
+							<p class="summary-text">
+								All the vegetables used are fresh and local. No added hormones
+								or antibiotics meats are used to provide you a healthy meal.
+							</p>
+						</div>
+					</div>
+					<div class="feature__card">
+						<div class="feature-icon">
+							<span
+								class="iconify feature__ico"
+								data-icon="ic:baseline-shopping-cart"
+								data-inline="false"
+							></span>
+						</div>
+						<div class="feature__text">
+							<h2 class="title-text">Order as much as you Want</h2>
+							<p class="summary-text">
+								Order anything and everything. We don’t limit your imagination
+								and your hunger crave. Lorem ipsum dolor sit, amet consectetur
+								adipisicing elit. Cumque ipsa culp
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="overview" id="Overview">
+				<div class="overview__text">
+					<h1 class="overview__title">A Glimpse For You</h1>
+					<p class="overview__summary">
+						Lorem Ipsum is simply dummy text of the printing and typesetting
+						industry. Lorem Ipsum has been the industry's standard dummy text
+						ever since the 1500s, when an unknown printer took a galley of type
+						and scrambled it to make a type specimen book.
+					</p>
+				</div>
+				<div class="overview__video" id="video">
+					<iframe
+						class="overview__frame"
+						src="https://www.youtube.com/embed/oibTtDQaWMk"
+					>
+					</iframe>
+				</div>
+			</section>
+
+			<section class="sign-up" id="Sign-up">
+				<h1 class="sign-up__title">Select your plan enjoy your meal</h1>
+				<div class="sign-up__container">
+					<div class="sign-up__card">
+						<h2 class="card-title">Starter</h2>
+						<p class="card-price">149$</p>
+
+						<ul>
+							<li>Lorem Ipsum</li>
+							<li>Lorem Ipsum</li>
+							<li>Lorem Ipsum</li>
+						</ul>
+
+						<a href="#" class="btn btn--white">Sign Up Now</a>
+					</div>
+					<div class="sign-up__card">
+						<h2 class="card-title">Pro</h2>
+						<p class="card-price">249$</p>
+
+						<ul>
+							<li>Lorem Ipsum</li>
+							<li>Lorem Ipsum</li>
+							<li>Lorem Ipsum</li>
+						</ul>
+						<a href="#" class="btn btn--white">Sign Up Now</a>
+					</div>
+					<div class="sign-up__card">
+						<h2 class="card-title">Premium</h2>
+						<p class="card-price">349$</p>
+						<ul>
+							<li>Lorem Ipsum</li>
+							<li>Lorem Ipsum</li>
+							<li>Lorem Ipsum</li>
+						</ul>
+						<a href="#" class="btn btn--white">Sign Up Now</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="share-review" id="Share-review">
+				<h1 class="share-review__title">Like to share a Review</h1>
+				<form
+					action=" https://www.freecodecamp.com/email-submit"
+					class="share-review__form"
+					id="form"
+				>
+					<div class="form-element">
+						<input
+							type="text"
+							class="text-field"
+							id="full-name"
+							placeholder="John Wick"
+							required
+						/>
+						<label for="full-name" class="label">Your Name</label>
+					</div>
+					<div class="form-element">
+						<input
+							type="email"
+							class="text-field"
+							id="email"
+							placeholder="JohnWick@gmail.com"
+							required
+						/>
+						<label for="email" class="label">Your Email</label>
+					</div>
+					<div class="form-element">
+						<textarea
+							class="text-area"
+							id="comment"
+							placeholder="Got the best Cowboy Bebop meal"
+							required
+						></textarea>
+						<label for="comment" class="label">Your Message</label>
+					</div>
+					<div class="submit-container">
+						<input
+							type="submit"
+							value="Submit"
+							class="btn btn--white"
+							id="submit"
+						/>
+					</div>
+				</form>
+				<footer class="share-review__footer">
+					<p class="footer-text">
+						Copyright 2020 By Anime Food. <br />All rights Reserved
+					</p>
+				</footer>
+			</section>
+		</div>
+	</body>
+</html>

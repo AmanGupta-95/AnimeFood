@@ -1,0 +1,35 @@
+/**********HEADER**********/
+
+.hero {
+	margin-top: 2.4rem;
+	height: 100vh;
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+		url(images/hero.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__container {
+		height: 13rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.hero-text {
+			color: var(--secondary-color);
+			text-shadow: 0 0.3rem 0.2rem rgba(0, 0, 0, 0.2);
+		}
+
+		.buttons {
+			display: flex;
+			justify-content: center;
+			a:not(:last-child) {
+				margin-right: 5rem;
+			}
+		}
+	}
+}

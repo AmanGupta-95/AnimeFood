@@ -1,0 +1,15 @@
+{
+	"name": "landing-page",
+	"version": "1.0.0",
+	"description": "landing page for FreeCodeCamp css project",
+	"main": "index.js",
+	"scripts": {
+		"watch-sass": "node-sass main.scss style.css -w"
+	},
+	"author": "Aman Gupta",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"node-sass": "^4.14.1"
+	}
+}

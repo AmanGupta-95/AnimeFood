@@ -1,0 +1,55 @@
+/**********OVERVIEW**********/
+
+.overview {
+	width: 100%;
+	height: 100vh;
+	background-image: var(--background-gradient);
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	@media only screen and (max-width: $bp-largest) {
+		height: 80vh;
+		flex-direction: column;
+	}
+
+	@media only screen and (max-width: $bp-large) {
+		height: 70vh;
+		padding-bottom: 3rem;
+		flex-direction: column;
+	}
+	@media only screen and (max-width: $bp-medium) {
+		height: 60vh;
+		justify-content: space-evenly;
+	}
+
+	&__text {
+		width: 25rem;
+		height: 20rem;
+		text-align: center;
+		@media only screen and (max-width: $bp-large) {
+			margin: 2rem 0;
+		}
+	}
+	&__title {
+		color: var(--secondary-color);
+		margin-bottom: 3rem;
+	}
+	&__summary {
+		color: var(--secondary-color);
+		font-size: 1.2rem;
+		word-spacing: 0.3rem;
+		letter-spacing: 0.1rem;
+	}
+	&__frame {
+		border: none;
+		border-radius: 2px;
+		width: 35rem;
+		height: 23rem;
+		@media only screen and (max-width: $bp-large) {
+			width: 30rem;
+			height: 19rem;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+/*VARIABLES*/
+:root {
+	--primary-color: #ee6039;
+	--secondary-color: #ffffff;
+	--tertiary-color: #262121;
+	--primary-color2: #e48f47;
+	--background-gradient: linear-gradient(
+		to right bottom,
+		var(--primary-color),
+		var(--primary-color2)
+	);
+}
+
+/*MEDIA-QUERY SIZE*/
+$bp-largest: 56.25em; //900px
+$bp-large: 37.5em; // 600px
+$bp-medium: 25em; // 400px
+
+/*GLOBAL RESET*/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	@media only screen and (max-width: $bp-largest) {
+		font-size: 62.5%; //10px
+	}
+	@media only screen and (max-width: $bp-medium) {
+		font-size: 43.75%; //7px
+	}
+}
+
+body {
+	font-family: Balsamiq Sans, sans-serif;
+}
+
+.main {
+	overflow: hidden;
+}
+
+@import './sass/common';
+@import './sass/navigation';
+@import './sass/header';
+@import './sass/feature';
+@import './sass/overview';
+@import './sass/signUp';
+@import './sass/shareReview';

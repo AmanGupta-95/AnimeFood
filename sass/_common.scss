@@ -1,0 +1,109 @@
+/**********COMMON**********/
+.btn {
+	&,
+	&:link,
+	&:visited {
+		display: inline-block;
+		text-decoration: none;
+		border: none;
+		padding: 1rem;
+		font-size: 1.2rem;
+		border-radius: 0.6rem;
+		box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+	&:hover {
+		transform: translateY(-0.3rem);
+		box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+		&::after {
+			transform: scaleX(1.4) scaleY(1.6);
+			opacity: 0;
+		}
+	}
+	&:active,
+	&:focus {
+		outline: none;
+		transform: translateY(-1px);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	}
+	&--orange {
+		background-color: var(--primary-color);
+		color: var(--secondary-color);
+	}
+
+	&--white {
+		background-color: var(--secondary-color);
+		color: var(--primary-color);
+	}
+}
+
+h1 {
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+	text-transform: capitalize;
+	word-spacing: 0.2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	letter-spacing: 0.2rem;
+	text-transform: capitalize;
+	word-spacing: 0.2rem;
+}
+
+.text-field,
+.text-area {
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	width: 100%;
+	padding-left: 0.4rem;
+	padding-top: 0.2rem;
+	font-family: inherit;
+	background-color: var(--secondary-color);
+	color: var(--tertiary-color);
+	font-size: 1rem;
+}
+.text-field {
+	height: 2rem;
+	&:focus + .label,
+	&:not(:placeholder-shown) + .label {
+		transform: translateY(-2rem);
+		color: var(--secondary-color);
+		font-size: 0.9rem;
+	}
+}
+
+.text-area {
+	height: 5rem;
+	padding-top: 0.5rem;
+	&:focus + .label,
+	&:not(:placeholder-shown) + .label {
+		transform: translateY(-2rem);
+		color: var(--secondary-color);
+		font-size: 0.9rem;
+	}
+}
+
+.text-field::-webkit-input-placeholder,
+.text-area::-webkit-input-placeholder {
+	visibility: hidden;
+}
+
+.text-field:focus::-webkit-input-placeholder,
+.text-area:focus::-webkit-input-placeholder {
+	font-family: inherit;
+	letter-spacing: 0.1rem;
+	font-weight: 400;
+	visibility: visible;
+}
+
+.label {
+	font-size: 1.2rem;
+	position: absolute;
+	top: 0.3rem;
+	left: 0.6rem;
+	cursor: text;
+	transition: all 0.3s;
+}
